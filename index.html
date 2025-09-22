@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavan Kumar Portfolio</title>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="page4.css">
+    <link rel="stylesheet" href="page5.css">
+    <link rel="stylesheet" href="page6.css">
+    <link rel="stylesheet" href="page7.css"> -->
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            min-height: 100vh;
+            background: linear-gradient(to right, #544b9c, #e0159f, #3a3a73);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        
+        
+    </style>
+
+
+
+<style>
+
+/* project */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--Pale-blue);
+}
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --Lights-late-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+.container{
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    background-color: var(--White);
+    
+}
+span{
+    font-size: 25px;
+}
+.result{
+    padding: 10px;
+    display: block;
+    background:linear-gradient(var(--Lights-late-blue),var(--Light-royal-blue));
+    width: 50%;
+    height: 450px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--White);
+}
+.circle{
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    background:linear-gradient(var(--Violet-blue),var(--Persian-blue));
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.circle h2{
+    margin: 0;
+    text-shadow: 2px 1px rgb(22, 21, 21);
+}
+.summary{
+    width: 50%;
+    padding: 10px;
+    height: 450px;
+}
+input{
+    width: 280px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--Light-royal-blue);
+    color: var(--White);
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content{
+    
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Pale-blue);
+}
+.content-text{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.content-score{
+    display: flex;
+    align-items: center;
+}
+.red{
+    color: var(--Lightred);
+}
+.green{
+    color: var(--Greenteal);
+}
+.blue{
+    color: var(--Violet-blue);
+}
+.yellow{
+    color: var(--Orangeyyellow);
+}
+@media only screen and (max-width: 400px) {
+    .box{
+        width: 350px;
+        height: 380px;
+    }
+    .result{
+        height: 380px;
+    }
+    .circle{
+        margin: 0;
+        font-size: large;
+        width: 100px;
+        height: 100px;
+        margin-left: 18px;
+    }
+    input{
+        width: 130px;
+        position: relative;
+        bottom: -40px;
+        left: 10px;
+    }
+    .summary{
+        margin-top:15px ;
+    }
+    .content{
+        margin-top: 10px;
+    }
+    .content-text{
+        gap: 5px;
+        font-size: 10px;
+    }
+    .content-score{
+        font-size: 10px;
+    }
+    span{
+        font-size: 18px;
+    }
+}
+
+
+/* page1 */
+
+.page1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+.page1{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 30px auto;
+  position: relative;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff87d0;
+}
+
+
+/* page2 */
+.page2-3{
+    border-radius: 30%;
+}
+
+.page2-1 {
+  font-size: 68px;
+  font-weight: bold;
+  background: linear-gradient(to right, #025df0, #ec4899); /* blue to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 170px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+
+.subtitle {
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #e5e7eb;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 3px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px; /* fully rounded */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-projects {
+      background: linear-gradient(to right, #f472b6, #ec4899); /* pink gradient */
+      color: white;
+      width: 200px;
+    }
+
+    .btn-resume {
+      background-color: #fef3c7; /* light yellow */
+      color: #6b7280; /* soft gray text */
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(65, 227, 239, 0.579);
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+      
+    }
+
+
+
+
+.arrow-container {
+      position: absolute;
+      bottom: 40px;
+      padding-bottom: 40px;
+    }
+
+.down-arrow {
+      font-size: 38px;
+      animation: bounce 2s infinite;
+      color: white;
+      padding-left: 750px;
+      
+    }
+
+@keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+/* page3 */
+.page3-1{
+    padding-top: 180px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: rgb(135, 249, 13);
+}
+
+.page3-2{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #f7f7f8;
+  font-size: 25px;
+  margin-bottom: 40px;
+  text-align: justify;
+  margin: 0;
+}
+
+.page3-3{
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  border-radius: 30%;
+  font-size: 90px;
+  margin: 0;
+}
+
+/* page4 */
+
+.page4-1{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: rgb(92, 249, 7);
+    align-items: center;
+    
+}
+
+.claculator{
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 200px;
+      width: 90%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      width: 500px;
+      height: 300px;
+      display: flex;
+      
+}
+
+.claculator-img{
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+}
+.page4-0 {
+    display: flex;
+    gap: 80px;
+    padding-left: 20px;
+    padding-right: 50px;
+    
+}
+
+.Projects{
+    padding-top: 0px;
+    padding-bottom: 100px;
+    
+}
+
+.claculator:hover {
+      transform: scale(1.15);
+      box-shadow: 0 10px 20px rgba(65, 227, 239, 0.579);
+
+      cursor: pointer;
+      transition: all 0.6s ease;
+    }
+
+.claculator:active {
+      transform: scale(0.96);
+      
+    }
+
+
+
+#project-details{
+      margin: 0 auto;
+      display: block;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      background: linear-gradient(to right, #f472b6, #ec4899);
+      border: none;
+      border-radius: 999px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+#details{
+    font-size: 12px;
+}
+
+#viwe{
+    padding-bottom: 1px;
+    padding-top: 10px;
+    text-decoration: none;
+    
+}
+
+#project-details:hover {
+      transform: scale(1.05);
+    }
+.claculator-img:hover {
+      transform: scale(1.05);
+    }
+
+#project-details:active {
+      transform: scale(1.96);
+      
+    }
+.claculator-img:active {
+      transform: scale(1.96);
+      
+    }
+
+/* page5 */
+
+.page5-1 {
+    font-size: 40px;
+    color: rgb(135, 249, 5);
+    padding-bottom: 40px;
+}
+
+.page5-2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.page5-3{
+    padding-bottom: 120px;
+}
+.resume {
+      padding: 12px 48px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px; /* fully rounded */
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+
+
+
+
+
+    .download-btn,.resume {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+    }
+
+/* page6 */
+
+.page6-1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    color: rgb(110, 255, 6);
+}
+.page6-2{
+  padding-top: 30px;
+}
+
+/* .page6-2{
+    margin: 0;
+}
+
+.page6-3{
+    color: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 2%;
+}
+.page6-4{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.page6-5{
+    border-radius: 90%;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-top: 20px;
+} */
+
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 700px;
+      width: 90%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+.contact-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #e5e7eb;
+    }
+
+    form {
+      display: grid;
+      gap: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+input, textarea {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+.submit-btn {
+      margin: 0 auto;
+      display: block;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      background: linear-gradient(to right, #f472b6, #ec4899);
+      border: none;
+      border-radius: 999px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    @media(max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* page7 */
+
+.page7-1{
+    padding-top: 20px;
+    margin: 19px;
+    display: flex;
+
+}
+
+.page7-2{
+    padding-left: 20px;
+    margin: 10px;
+    align-items: right;
+    display: flex;
+}
+
+
+
+
+</style>
+
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    
+</head>
+
+  <body>
+
+    <!-- page 1 menu bar  -->
+
+<section class="page1">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <nav class="navbar">
+      <ul class="menu-bar">
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Featured Projects</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#Content">Content</a></li>
+      </ul>
+    </nav>
+</section>
+
+<script src="script-menu.js"></script>
+
+
+    <!-- page 2 Home -->
+
+    <section class="Home">
+        <div class="page2-1">
+            Hi, I'm Pavan Kumar — Developer.<span></span>
+        </div>
+        <div class="page2-2">
+            <h2 class="subtitle">Building next-gen web experiences from front to back.</h2>
+        </div>
+        <div class="page2-3">
+            <div class="button-container">
+                <button class="btn btn-projects">View Projects →</button>
+                <button class="btn btn-resume"><a href="D:\projects-pavan\pavan portfolio site\Pavan Resume.png" download class="download-btn">Download Resume</a></button>
+            </div>
+            
+        <!-- Scroll down arrow -->
+
+
+
+        <!-- <div class="arrow-container">
+            <div class="down-arrow">↓</div>
+        </div>
+        </div> -->
+
+        
+    </section>
+
+    
+     <!-- page 3 About  -->
+
+    <section class="About">
+        <div class="page3-1">About Me</div>
+        <div class="page3-2">I’m pavan currently pursuing my degree while actively learning key technologies like HTML, CSS, Python and JavaScript to build a strong foundation in web development and software engineering. I'm also exploring the field of Artificial Intelligence (AI), which I believe is shaping the future of technology. Along with technical skills, I’m developing strong communication, leadership, and time management abilities. 
+            I aim to build a well-rounded skillset that allows me to solve real-world problems, work effectively in teams, and grow in the tech industry. I'm passionate about continuous learning and always looking for new ways to improve myself and stay ahead in this fast-changing digital world.
+        </div>
+    </section>
+
+    <!-- page 4 Projects -->
+
+    <section class="Projects">
+        <div class="page4-1">Projects</div> <br>
+
+        <!-- calculator project -->
+        <div class="page4-0">
+            <div class="claculator">
+        <div class="page4-2">
+            <div class="page4-3">
+                <img class="claculator-img" src="D:\projects-pavan\Calculater Project\calculator img.png" />
+            </div>
+            <p id="details" > A simple calculator built with HTML, CSS, and 
+                JavaScript for quick and accurate calculations. </p>
+                <div id="viwe">   
+                    <a href="D:\projects-pavan\Calculater Project\calculator.html" ><button id="project-details"> View Project </button></a>
+                </div>
+        </div>
+        </div>
+
+        <!-- ToDo list project -->
+
+        <div class="claculator">
+        <div class="page4-2">
+            <div class="page4-3">
+                <img class="claculator-img" src="D:\projects-pavan\ToDo\todo img.png" alt="" />
+            </div>
+            <p id="details" > A to-do list app with voice input, due date/time, 
+                and compact task summaries, plus active navigation 
+                tabs and reminders for deadlines. </p>
+            <a href="D:\projects-pavan\ToDo\Todo list.html" ><button id="project-details"> View Project </button></a>
+        </div>
+        </div>
+
+        <!-- solar project -->
+        <div class="claculator">
+        <div class="page4-2">
+            <div class="page4-3">
+                <img class="claculator-img" src="D:\projects-pavan\solor project\solar img.png" alt="" />
+            </div> 
+            <p id="details" > A solar system animation in HTML & CSS showing Earth orbiting the Sun with its Moon. </p>
+            <a href="D:\projects-pavan\solor project\solor.html" ><button id="project-details"> View Project </button></a>
+        </div>
+        </div>
+
+        
+        <!-- <div class="claculator">
+        <div class="page4-2">
+            <div class="page4-3">
+                <img class="claculator-img" src="C:\Users\PAVAN\Pictures\Screenshots\calculator img.png" alt="" />
+            </div>
+            <p id="details" > hello this is claculator project </p>
+            <button id="project-details"> View Project </button>
+        </div>
+        </div>
+
+        <div class="claculator">
+        <div class="page4-2">
+            <div class="page4-3">
+                <img class="claculator-img" src="C:\Users\PAVAN\Pictures\Screenshots\calculator img.png" alt="" />
+            </div>
+            <p id="details" > hello this is claculator project </p>
+            <button id="project-details"> View Project </button>
+        </div>
+        </div> -->
+
+    </section>
+
+    <!-- page 5 Resume -->
+
+    <section class="Resume">
+        <div class="page5-1">
+            Resume
+        </div>
+        <div class="page5-2">
+            Download my complete resume to learn more about my experience and skills.
+        </div>
+        <div class="page5-3">
+            <!-- <button class="resume"><a href="resume.pdf" download class="download-btn"></a> Download Resume (PDF)</button> -->
+            <a href="D:\projects-pavan\pavan portfolio site\Pavan Resume.png" download class="download-btn">Download Resume (PDF)</a>
+            <!-- <input type="button" name="resume" value="Download Resume (PDF)"> -->
+        </div>
+    </section>
+
+
+
+    <!-- page 6 Content -->
+
+    <section class="Content">
+        <div class="page6-1">
+            Get In Touch
+        </div>
+        <div class="page6-2">
+        <div class="contact-box">
+            <h2>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</h2>
+        <form>
+            <div class="row">
+                <!-- <form action="https://formsubmit.co/pavankumarr050@gmail.com" method="gmail">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://your-portfolio.com/thanks.html"> -->
+                Name <input type="text" id="name" placeholder="Your Name" required />
+                Gmail <input type="email" id="email" placeholder="your@email.com" required />
+                </form>
+            </div>
+            Message <textarea id="message" placeholder="Your message..." required></textarea>
+            <button class="submit-btn" type="button" onclick="sendEmail()" >Send Message</button>
+            
+            <!-- this all email connect to " emailjs web site " and some id's and code to - connect to email to my portfolio web site  -->
+
+        </form>
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/r.pavankumar215?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/game_changer_215?igsh=eWo5MzEwMTQxc3hz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@pvn_web?si=F2BGzn7yQ9C5lCbO" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/r-pavan-kumar-00a045322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Pavan2266" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+           
+            <hr>
+    </section>
+
+    <!-- page 7  -->
+    <section class="page7">
+        <div class="page7-1">
+            © 2025 Pavan Kumar. All rights reserved.
+        </div>
+        <hr>
+        <div class="page7-2">
+            Mail : pavankumarr050@gmail.com <br> rpavankumar215@gmail.com
+        </div>
+        <hr>
+    </section>
+
+    <script>
+
+        // email connection code contect details
+
+function sendEmail(){
+emailjs.init({
+  publicKey: "D516K3Y0tSzgY2Vo8",
+});
+
+
+
+const name = document.getElementById("name").value.trim();
+const email = document.getElementById("email").value.trim();
+const message = document.getElementById("message").value.trim();
+
+const params = {
+    from_name: name,
+    from_email: email,
+    message: message,
+};
+
+emailjs
+    .send("service_lscvtqk", "template_ukjzki9", params)
+    .then(function (){
+        alert("Email sent");
+    } )
+    .catch( function () {
+        alert("Failed to sent")
+    });
+}
+    </script>
+    <script>
+        const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 60;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = section.getAttribute("class");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+    </script>
+
+
+</body>
+</html>
